@@ -87,7 +87,7 @@ public class MovieDetailFragment extends BaseFragment implements Contracts.View 
     DaggerMovieDetailComponent.builder()
             .movieDetailModule(new MovieDetailModule(this))
             .appComponent(((BaseApplication)getActivity().getApplication()).getAppComponent())
-            .appModule(new AppModule( ((BaseApplication)getActivity().getApplication())))
+            //.appModule(new AppModule( ((BaseApplication)getActivity().getApplication())))
             .build()
             .inject(this);
     }

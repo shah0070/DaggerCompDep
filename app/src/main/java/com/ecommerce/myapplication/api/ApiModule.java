@@ -24,6 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiModule {
 //    @Provides
 //    @Singleton
+
 //    ApiService providesApiService() {
 //        OkHttpClient.Builder builder = new OkHttpClient.Builder();
 //        builder.hostnameVerifier((str, sslSession) -> true);

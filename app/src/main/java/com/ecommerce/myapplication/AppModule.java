@@ -44,7 +44,7 @@ public class AppModule {
     }
 
     @Provides
-    @MovieScopeDetail
+    @Singleton
     DatabaseInteractor providesDatabaseInteractor(AppDatabase appDatabase) {
         return new DatabaseWrapper(appDatabase);
     }
@@ -56,7 +56,7 @@ public class AppModule {
     }
 
     @Provides
-    @MovieScopeDetail
+    @Singleton
     AppDatabase providesAppDatabase() {
         return Room.databaseBuilder(application, AppDatabase.class, "movieData").allowMainThreadQueries().build();
     }

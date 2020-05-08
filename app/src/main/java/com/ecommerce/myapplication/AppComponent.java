@@ -1,6 +1,8 @@
 package com.ecommerce.myapplication;
 
 import com.ecommerce.myapplication.api.ApiModule;
+import com.ecommerce.myapplication.api.ApiService;
+import com.ecommerce.myapplication.dao.DatabaseInteractor;
 import com.ecommerce.myapplication.movie.MovieComponent;
 import com.ecommerce.myapplication.movie.MovieModule;
 import com.ecommerce.myapplication.movie.MovieScope;
@@ -21,7 +23,5 @@ import dagger.Component;
 public interface AppComponent {
     void inject(BaseApplication baseApplication);
 
-   // MovieComponent newMovieComponent(MovieModule movieModule);
-
-   // MovieDetailComponent newMovieDetailComponent(MovieDetailModule movieDetailModule);
+    DatabaseInteractor getDatabaseInteractor();
 }

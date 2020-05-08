@@ -16,7 +16,7 @@ import timber.log.Timber;
  * Created by abhishek
  * on 24/12/17.
  */
-@Module(includes = AppModule.class)
+@Module
 public class MovieDetailModule {
 
     private final Contracts.View movieDetailView;
